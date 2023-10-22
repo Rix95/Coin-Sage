@@ -115,7 +115,6 @@ app.post("/forgot-password", async (req, res) => {
     const token = jwt.sign({ email: oldUser.email, id: oldUser._id }, secret, {
       expiresIn: "5m",
     });
-    coin - sage - d4e4577515d9.herokuapp.com;
     const link = `httpss://coin-sage-d4e4577515d9.herokuapp.com/reset-password/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
