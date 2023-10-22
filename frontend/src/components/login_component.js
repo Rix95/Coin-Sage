@@ -8,7 +8,7 @@ export default function Login() {
     e.preventDefault();
 
     console.log(email, password);
-    fetch("http://localhost:5000/login-user", {
+    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {

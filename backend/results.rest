@@ -1,1 +1,1 @@
-GET http://localhost:5000/paginatedUsers?page=5&limit=5
+GET http://coin-sage-d4e4577515d9.herokuapp.com/paginatedUsers?page=5&limit=5

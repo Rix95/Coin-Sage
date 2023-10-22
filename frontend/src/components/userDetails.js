@@ -8,7 +8,7 @@ export default function UserDetails() {
   const [admin, setAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/userData", {
+    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
