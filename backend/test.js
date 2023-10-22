@@ -25,4 +25,4 @@ app.get("/users", async (req, res) => {
   res.json(results);
 });
 
-//   GET http://coin-sage-d4e4577515d9.herokuapp.com/users?page=1&limit=4
+//   GET https://coin-sage-d4e4577515d9.herokuapp.com/users?page=1&limit=4

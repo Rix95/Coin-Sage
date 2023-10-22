@@ -116,7 +116,7 @@ app.post("/forgot-password", async (req, res) => {
       expiresIn: "5m",
     });
     coin - sage - d4e4577515d9.herokuapp.com;
-    const link = `https://coin-sage-d4e4577515d9.herokuapp.com/reset-password/${oldUser._id}/${token}`;
+    const link = `httpss://coin-sage-d4e4577515d9.herokuapp.com/reset-password/${oldUser._id}/${token}`;
     var transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {

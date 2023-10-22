@@ -16,7 +16,7 @@ export default function SignUp() {
       e.preventDefault();
 
       console.log(fname, lname, email, password);
-      fetch("http://coin-sage-d4e4577515d9.herokuapp.com/register", {
+      fetch("https://coin-sage-d4e4577515d9.herokuapp.com/register", {
         method: "POST",
         crossDomain: true,
         headers: {

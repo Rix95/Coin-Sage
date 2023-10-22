@@ -19,7 +19,7 @@ export default function AdminHome({ userData }) {
   });
 
   const getPaginatedData = () => {
-    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/users?page=1&limit=5", {
+    fetch("https://coin-sage-d4e4577515d9.herokuapp.com/users?page=1&limit=5", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -30,7 +30,7 @@ export default function AdminHome({ userData }) {
   };
 
   const getAllUser = () => {
-    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/getAllUser", {
+    fetch("https://coin-sage-d4e4577515d9.herokuapp.com/getAllUser", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -46,7 +46,7 @@ export default function AdminHome({ userData }) {
   };
   const deleteUser = (id, name) => {
     if (window.confirm(`Are you sure you want to delete ${name}`)) {
-      fetch("http://coin-sage-d4e4577515d9.herokuapp.com/deleteUser", {
+      fetch("https://coin-sage-d4e4577515d9.herokuapp.com/deleteUser", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -94,7 +94,7 @@ onChange={base64}
     movies.current = e.selected + 1;
     console.log(movies.current);
     fetch(
-      `http://coin-sage-d4e4577515d9.herokuapp.com/users?page=${movies.current}&limit=${limit}`,
+      `https://coin-sage-d4e4577515d9.herokuapp.com/users?page=${movies.current}&limit=${limit}`,
       {
         method: "GET",
       }
@@ -108,7 +108,7 @@ onChange={base64}
 
   function limitChanged(e) {
     fetch(
-      `http://coin-sage-d4e4577515d9.herokuapp.com/users?page=${movies.current}&limit=${limit}`,
+      `https://coin-sage-d4e4577515d9.herokuapp.com/users?page=${movies.current}&limit=${limit}`,
       {
         method: "GET",
       }

@@ -18,7 +18,7 @@ export default function AdminHome({ userData }) {
 
   //fetching all user
   const getAllUser = () => {
-    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/getAllUser", {
+    fetch("https://coin-sage-d4e4577515d9.herokuapp.com/getAllUser", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -37,7 +37,7 @@ export default function AdminHome({ userData }) {
   //deleting user
   const deleteUser = (id, name) => {
     if (window.confirm(`Are you sure you want to delete ${name}`)) {
-      fetch("http://coin-sage-d4e4577515d9.herokuapp.com/deleteUser", {
+      fetch("https://coin-sage-d4e4577515d9.herokuapp.com/deleteUser", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -71,7 +71,7 @@ export default function AdminHome({ userData }) {
 
   function getPaginatedUsers() {
     fetch(
-      `http://coin-sage-d4e4577515d9.herokuapp.com/paginatedUsers?page=${currentPage.current}&limit=${limit}`,
+      `https://coin-sage-d4e4577515d9.herokuapp.com/paginatedUsers?page=${currentPage.current}&limit=${limit}`,
       {
         method: "GET",
       }

@@ -21,7 +21,7 @@ function ImageUpload() {
   }, []);
 
   function uploadImage() {
-    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/upload-image", {
+    fetch("https://coin-sage-d4e4577515d9.herokuapp.com/upload-image", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -37,7 +37,7 @@ function ImageUpload() {
       .then((data) => console.log(data));
   }
   function getImage() {
-    fetch("http://coin-sage-d4e4577515d9.herokuapp.com/get-image", {
+    fetch("https://coin-sage-d4e4577515d9.herokuapp.com/get-image", {
       method: "GET",
     })
       .then((res) => res.json())
