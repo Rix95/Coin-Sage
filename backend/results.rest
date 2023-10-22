@@ -1,1 +1,1 @@
-GET https://coin-sage-d4e4577515d9.herokuapp.com:5000/paginatedUsers?page=5&limit=5
+GET https://coin-sage-d4e4577515d9.herokuapp.com/paginatedUsers?page=5&limit=5
