@@ -1,3 +1,5 @@
+<div align="center"><img src="https://github.com/nelson123-lab/CoinSage/blob/bdc3d9c1ec985975da18ce0bda31fe0bd48cf180/CoinSAGE.png" width="900"/></div>
+
 # CoinSage
 "A Road to Financial Stability"
 
